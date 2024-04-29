@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Empresa Ryk Motors</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; 
+        }
+
+        header {
+            background-color: #000000;
+            color: #ff0000;
+            text-align: center;
+            padding: 1em 0;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #000000;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ff0000;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease; 
+        }
+
+        nav a:hover {
+            color: #00ff00;
+            transform: scale(1.1);
+        }
+
+        nav a.home:hover, nav a.produtos:hover, nav a.contato:hover {
+            transform: scale(1.2); 
+        }
+
+        #banner {
+            width: 100%;
+            height: auto;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .principal {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            animation: fadeInLeft 1s ease-out;
+        }
+
+        .titulo-centralizado {
+            text-align: center;
+            color: #ff0000;
+        }
+
+        #missao {
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .beneficios {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInRight 1s ease-out;
+        }
+
+        .beneficios ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .itens {
+            margin: 10px 0;
+            color: #ff0800;
+        }
+
+        .imagembeneficios {
+            max-width: 100%;
+            height: auto;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-principal">Empresa Ryk Motors</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html" class="home">Home</a></li>
+            <li><a href="produtos.html" class="produtos">Produtos</a></li>
+            <li><a href="contato.html" class="contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <img id="banner" src="banner.jpg" alt="Banner da Empresa Ryk Motors"> 
+
+    <div class="principal">
+        <h2 class="titulo-centralizado">Sobre a Empresa Ryk Motors</h2>
+
+        <p>A Ryk Motors é uma fabricante japonesa de automóveis, resultado da fusão entre Datsun e Prince. Criada no Japão em 1914, na região de <strong>Rokuro Aoyama</strong>, a empresa recebe clientes diariamente.</p>
+
+        <p id="missao"><em>Nossa missão é: <strong>"Proporcionar autoestima e qualidade de vida aos clientes"</strong>.</em></p>
+
+        <p>Contamos com profissionais experientes sempre atualizados sobre os últimos modelos de carros de luxo. O atendimento é de excelência e agilidade, garantindo a melhor qualidade de carros para os clientes.</p>
+    </div>
+
+    <div class="beneficios">
+        <h3 class="titulo-centralizado">Benefícios</h3>
+
+        <ul>
+            <li class="itens">Atendimento aos Clientes</li>
+            <li class="itens">Empresa diferenciada</li>
+            <li class="itens">Localização</li>
+            <li class="itens">Profissionais Qualificados</li>
+        </ul>
+
+        <img src="foto2.jpg" alt="Imagem de benefícios" class="imagembeneficios"> 
+    </div>
+</body>
+</html>
